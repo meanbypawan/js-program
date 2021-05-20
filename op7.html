@@ -1,0 +1,35 @@
+<script>
+    var x = 5;
+    //x = x++;
+    document.write(x);
+
+    var a,b,c,d;
+    a = 10;
+    b = 20;
+    c = 30;
+    d = 40;
+    var x;
+    
+    // x = (a < b) && (++c < d);
+    x = (a < b) || (++c < d);
+    /*
+        (10 < 20) && (++c < d)
+         true && (++c < d)
+         true && (31 < 40)
+    */
+     /*
+       ++C < d 
+         c = c + 1
+         c<d
+         -----------------
+        c++ < d
+        c < d
+        c = c + 1 
+     */ 
+
+    document.write("<br>a : "+a);
+    document.write("<br>b : "+b);
+    document.write("<br>c : "+c);
+    document.write("<br>d : "+d);
+    document.write("<br>x : "+x); 
+</script>
