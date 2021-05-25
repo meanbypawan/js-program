@@ -1,61 +1,17 @@
 <script>
-    /*
-    What is function :-
-      Function is self containted program or block of code
-    Why fuction or what are the advantages of using function ?
-      1) To reduce the complexity of program
-      2) To remove the code redundancy
-      3) Code is better manageble
-      4) Troubleshooting / error handling will be easy  
-    
-    Arithmetic calculatr
-    addition(){
-        10 line ka code
-    }
-    subtraction(){}
-    multiplication(){}
-    division(){}
-    
-    funcation calculatr(){
-      addition();
-      subtraction();
-      multiplication();
-      division();
-
-      addition();
-
-    }
-    Js :- To define the function in js use function keyword
-    In javascript each function return a value by default.
-    /*
-    
-    int sayHello(){
-      ---
-      ---
-      return 10;
-    }
-    */
-    function sayHello(){
-      document.write("Hello Javascript");
-      return 10;
-    }
-    var result = sayHello();
-    document.write("<br>Result : "+sayHello());
+  var n = prompt("Enter a number");
+  n = n * 1;
+ 
+  var s = 0,digit=0;
+  
+  var temp = n;
+  while(n!=0){
+     digit  = n%10; 
+     s = s + digit * digit * digit;
+     n = parseInt(n/10);
+  }
+  if(temp == s)
+    document.write("Armstorg");
+  else
+   document.write("Not Armstrong");  
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
