@@ -1,0 +1,23 @@
+<script>
+    var customer = {
+        "id":1,
+        "cname": "Rahil",
+        "mobile": "900911222",
+        "age": 21,
+        "showInfo": function(){
+            document.write("<br>Id : "+this.id);
+            document.write("<br>Name : "+this.cname);
+            document.write("<br>Mobile : "+this.mobile);
+            document.write("<br>Age : "+this.age);
+        },
+        "getAge": function(){
+            document.write("<br>Age : "+this.age);
+        }
+    };
+    function sayHello(){
+        document.write("<br>Say Hello");
+    }
+    sayHello();
+    customer.showInfo();
+    customer.getAge();
+</script>

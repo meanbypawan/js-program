@@ -1,0 +1,24 @@
+<script>
+    
+    //       0,1,  ,2,3 ,4,5 
+    var arr=[100,20,300,40,50,60];
+    /*
+     for-in
+     for(index in arr){
+       document.write(arr[index]);
+     }
+    */
+   //arr.push("Hello");
+   //arr.push("World");
+   arr.push(100);
+   arr.unshift(1000);
+   //arr.splice(3,0,5000,2000,4000); // to Manage the array
+   //delete arr[2];
+   //arr.pop(); -> It will remove last element of array
+   //arr.shift(); -> It will remove first element of array
+   arr[2] = 2000;
+   arr = arr.sort(); // sort string data.
+   for(i in arr)
+       document.write("<br>"+i+" : "+arr[i]);
+    
+</script>
