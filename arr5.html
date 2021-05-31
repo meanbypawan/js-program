@@ -1,0 +1,31 @@
+<script>
+    /*
+      Customer(Object)
+        property : id,name,mobile,age
+      
+      JSON(Javascipt Object Notation)  
+    */
+
+   var customerList = [
+    {"id":1,"cname": "ABC","mobile":"9009111222","age": 21},
+    {"id":2,"cname": "ABC","mobile":"9009111222","age": 21},
+    {"id":3,"cname": "ABC","mobile":"9009111222","age": 21}
+   ]
+   document.write("<table border='1' width='100%'>");
+    document.write("<tr>");
+    document.write("<td>Id</td>");
+    document.write("<td>Name</td>");
+    document.write("<td>Mobile</td>");
+    document.write("<td>Age</td>");    
+    document.write("</tr>");    
+    for(index in customerList){
+        var obj = customerList[index];
+        document.write("<tr>");
+        document.write("<td>"+obj.id+"</td>");
+        document.write("<td>"+obj.cname+"</td>");
+        document.write("<td>"+obj.mobile+"</td>");
+        document.write("<td>"+obj.age+"</td>");    
+        document.write("</tr>");    
+    }
+   document.write("</table>");
+</script>

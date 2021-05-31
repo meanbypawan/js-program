@@ -1,0 +1,28 @@
+<script>
+    /*
+     2D -array :- collection of 1-d array
+       c=  0  1   2    
+    r = 0  10 20 30 ------> r = 0 , c = 0 to 2
+    r = 1  40 50 60-------> r = 1, c = 0 to 2
+    r = 2  70 80 90-------> r = 2, c = 0 to 2
+    
+    Jagged Array :-
+    
+     var a = [10,20,30,40]
+     a.length :- 4
+    */
+    var x = [
+              [10,20],
+              [40,50,60],
+              [70,80,90,95]
+            ];
+    // x[0], x[1] , x[2]
+    //document.write(x.length+"<br>");
+
+    for(var r = 0 ; r<x.length; r++){
+      for(var c = 0; c<x[r].length; c++){
+          document.writeln(x[r][c]);
+      }
+      document.write("<br>");
+    }        
+</script>

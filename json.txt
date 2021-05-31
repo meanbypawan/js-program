@@ -1,0 +1,47 @@
+
+  
+     What is REST API.  
+                                           
+     Android(Java/Kotlin)                                      
+                                           
+                                      Flipkart
+     IOS   ----------------------->                                
+     Swift     (request)              Flipkart-Server        Database-Server
+           <------------------------
+               response                 APIs (Api developer)
+     Browser                            APIS
+     (Ruby)                             APIS         
+    
+    
+    XML :-(Xentensible Markup language)
+    
+    JSON :-- It is web technique which is used to exchange the data
+             between two parties(client, Server) 
+             
+             2) Json is text data or String data.
+             
+    Json Type :-
+    
+      1) JSON-Array (Multiple data) => []
+      
+      2) JSON-Object (Single Data)==> {}        
+             
+      e.g1:-- [{"id":1,"cname: "rahil"},{},{}]
+      
+      e.g2:---{"data": [{},{},{},{}] }
+             
+   Requirement :-
+   
+         Flipkart
+         
+      1) Web - Application :-- Browser
+      
+   ---------------------------------------------
+      1) Android
+      2) IOS          -----------------> Api(Json)
+      3) Borwser
+      4) BlcakBerry          
+             
+             
+             
+             
