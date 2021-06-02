@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <script>
+           function swapImage(currentImage){
+             //var currentImage = document.getElementById(id);
+             var mainImage = document.getElementById("main");
+
+             var temp = mainImage.src;
+             mainImage.src = currentImage.src;
+             currentImage.src = temp;
+           } 
+        </script>
+    </head>
+    <body>
+        <center>
+            <img src="java.png" width="200px" height="200px" id="main"/>
+            <br>
+            <img onclick="swapImage(this)" id="first" src="android.png" width="100px" height="100px"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="swapImage(this)" id="second" src="c.png" width="100px" height="100px"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="swapImage(this)" id="third" src="cpp.png" width="100px" height="100px"/>
+        </center>
+    </body>
+</html>

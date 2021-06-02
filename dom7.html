@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
+        function validateData(){
+            var status = true; 
+            // Getting input control
+            var username = document.getElementById("username").value;
+
+            // Getting small tag object to show the error
+            var usernameError = document.getElementById("usernameError");
+        
+            if(username.length == 0){
+              status = false;
+              usernameError.innerHTML = "Username required";
+              usernameError.style.color='red';
+            }
+            else{
+                usernameError.innerHTML="";
+            }
+            return status;
+        }
+    </script>
+  </head>
+  <body>
+      <div class="container">
+          <form>
+              <div class="form-group">
+                  <label>Username</label>
+                  <input onkeyup="validateData()" type="text" class="form-control" id="username"/>
+                  <small id="usernameError"></small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input onkeyup="validateData()" type="password" class="form-control" id="username"/>
+                <small id="passwordError"></small>
+            </div>
+              <div class="form-group">
+                  <button onclick="return validateData()" type="submit" class="btn btn-primary">Register</button>
+              </div>
+          </form>
+      </div>
+  </body>
+</html>

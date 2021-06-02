@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            #board{
+                width: 100%;
+                border: 1px solid red;
+                height: 200px;
+            }
+        </style>
+        <script>
+            function displayData(){
+               var divObject = document.getElementById("board");
+               var inputObject = document.getElementById("textInput");
+               var data = inputObject.value;
+               /*
+                 div, span, p, small
+               */ 
+              divObject.innerHTML = "Hello "+data; 
+            }
+        </script>
+    </head>
+    <body>
+       <center> 
+        <input type="text" onkeyup="displayData()" id="textInput"/><br> 
+       </center>
+      <div id="board"></div>
+    </body>
+</html>
